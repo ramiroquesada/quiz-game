@@ -2,10 +2,11 @@
 import { Store } from '../context/Store';
 
 export const Premio = ({ preg }) => {
-	const { nextPregunta, prizeFalse } = Store();
+	const { prizeFalse, nextPregunta, numPregunta } = Store();
 
 	const siguientePregunta = () => {
 		nextPregunta();
+		localStorage.setItem('numPreg', Number(numPregunta) + 1);
 		prizeFalse();
 	};
 

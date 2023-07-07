@@ -1,7 +1,21 @@
+import { useEffect } from 'react';
 import './App.css';
 import { Acertijos } from './components/Acertijos';
+import { Store } from './context/Store';
 
 function App() {
+	const { setNumPregFromLS } = Store();
+
+	useEffect(() => {
+		const pregLS = localStorage.getItem('numPreg');
+		if (pregLS ) {
+			setNumPregFromLS(Number(pregLS));
+		} else if (pregLS == null) {
+			localStorage.setItem('numPreg', 0)
+			setNumPregFromLS(0);
+		}
+	}, []);
+
 	return (
 		<>
 			<div className='appContainer'>
