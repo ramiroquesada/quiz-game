@@ -38,7 +38,7 @@ export const Respuesta = ({ data }) => {
 	return (
 		<>
 			<button
-				className='respBtn rounded p-2'
+				className='respBtn rounded-3 p-2 w-50'
 				disabled={isLoading || btnDis}
 				data={ok}
 				onClick={checkResp}>

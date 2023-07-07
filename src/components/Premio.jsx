@@ -19,19 +19,27 @@ export const Premio = ({ preg }) => {
 	if (numPregunta == 3) {
 		return (
 			<>
-				<div>
+				<div className='d-flex flex-column gap-5'>
 					<h2>Felicidades</h2>
-					<button onClick={restartGame}>Jugar De Nuevo</button>
+					<button
+						className='respBtn restBtn rounded-3 p-3'
+						onClick={restartGame}>
+						Jugar De Nuevo
+					</button>
 				</div>
 			</>
 		);
 	}
 
 	return (
-		<div className='d-flex flex-column gap-3'>
+		<div className='d-flex flex-column gap-5'>
 			<div>{preg.prize}</div>
 			<div>
-				<button onClick={siguientePregunta}>Siguiente Pregunta</button>
+				<button
+					className='respBtn p-3 rounded-3  nextBtn'
+					onClick={siguientePregunta}>
+					Siguiente Pregunta
+				</button>
 			</div>
 		</div>
 	);

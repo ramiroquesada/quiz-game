@@ -2,7 +2,6 @@
 import { useEffect } from 'react';
 import { Acertijos } from './components/Acertijos';
 import { Store } from './context/Store';
-import './App.css';
 
 function App() {
 	const { setNumPregFromLS } = Store();

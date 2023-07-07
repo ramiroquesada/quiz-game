@@ -16,14 +16,14 @@ export const Preguntas = () => {
 
 	return (
 		<>
-			<div className='pregunta w-75'>
+			<div className='pregunta w-75 d-flex flex-column align-items-center'>
 				<h2 className=''>PREGUNTA {Number(numPregunta) + 1}</h2>
-				<hr />
+				<hr className='w-100' />
 				<h5 className='text-secondary'>{pregunta?.Pregunta}</h5>
-				<hr />
+				<hr className='w-75' />
 			</div>
 
-			<div className='respuestas w-50 d-flex flex-column justify-content-center gap-3'>
+			<div className='respuestas w-75 d-flex flex-column align-items-center justify-content-center gap-3'>
 				{pregunta?.Respuestas.map((resp) => (
 					<Respuesta
 						key={pregunta.Respuestas.indexOf(resp)}
