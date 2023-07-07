@@ -8,7 +8,7 @@ import { Premio } from './Premio';
 export const Preguntas = () => {
 	const { numPregunta, isPrize } = Store();
 
-	const pregunta = data[numPregunta] ;
+	const pregunta = data[numPregunta];
 
 	if (isPrize) {
 		return <Premio preg={pregunta} />;
@@ -17,7 +17,7 @@ export const Preguntas = () => {
 	return (
 		<>
 			<div className='pregunta w-75'>
-				<h2 className=''>PREGUNTA {Number(numPregunta) + 1 }</h2>
+				<h2 className=''>PREGUNTA {Number(numPregunta) + 1}</h2>
 				<hr />
 				<h5 className='text-secondary'>{pregunta?.Pregunta}</h5>
 				<hr />

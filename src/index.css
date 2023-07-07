@@ -19,7 +19,7 @@ body {
 	font-size: 18px;
 }
 
-.appContainer{
+.appContainer {
 	height: 80vh;
 	display: flex;
 	align-items: center;
@@ -27,7 +27,7 @@ body {
 	width: 100%;
 }
 
-.respBtn{
+.respBtn {
 	background: rgba(196, 151, 84, 0.667);
 	cursor: pointer;
 	color: white;
