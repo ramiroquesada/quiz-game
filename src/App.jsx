@@ -1,19 +1,14 @@
-import './App.css'
-import { Acertijos } from './components/Acertijos'
+import './App.css';
+import { Acertijos } from './components/Acertijos';
 
 function App() {
-
-
-
-  return (
-    <>
-      <div className='appContainer'>
+	return (
+		<>
+			<div className='appContainer'>
 				<Acertijos />
-
-
 			</div>
-    </>
-  )
+		</>
+	);
 }
 
-export default App
+export default App;

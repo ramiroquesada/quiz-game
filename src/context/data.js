@@ -20,7 +20,8 @@ export const data = [
 				"resp1": "lalalala 4?"
 			},
 
-		]
+		],
+		"prize": "premio1"
 	},
 	{
 		"Pregunta": "Nashe 2?",
@@ -42,7 +43,8 @@ export const data = [
 				"resp1": "lalalala 4?"
 			},
 
-		]
+		],
+		"prize": "premio2"
 	},
 	{
 		"Pregunta": "Nashe 3?",
@@ -64,7 +66,8 @@ export const data = [
 				"resp1": "lalalala 4?"
 			},
 
-		]
+		],
+		"prize": "premio3"
 	},
 	{
 		"Pregunta": "Nashe 4?",
@@ -86,7 +89,8 @@ export const data = [
 				"resp1": "lalalala 4?"
 			},
 
-		]
+		],
+		"prize": "premio4"
 	},
 	
 ]

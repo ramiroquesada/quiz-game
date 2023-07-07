@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Store } from '../context/Store';
 
 export const Respuesta = ({ data }) => {
-	const { numPregunta, nextPregunta, isLoading, loadingTrue, loadingFalse } =
+	const { numPregunta, prizeTrue, isLoading, loadingTrue, loadingFalse } =
 		Store();
 
 	const [btnDis, setbtnDis] = useState(false);
@@ -16,8 +16,8 @@ export const Respuesta = ({ data }) => {
 		if (numPregunta < 4) {
 			setTimeout(() => {
 				loadingFalse();
-				nextPregunta();
-			}, 1000);
+				prizeTrue();
+			}, 750);
 		}
 	};
 
